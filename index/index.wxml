@@ -1,0 +1,20 @@
+<view class='pobox'>
+  <view class="box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+      <view animation="{{animation1}}">
+        <image src="{{clubs[0]}}" class="img" style="width:{{img_width_one}}rpx" mode='aspectFill'/>
+      </view>
+      <view animation="{{animation2}}" bindtap="scrollLeft">
+        <image src="{{clubs[1]}}"class="img2"/>
+      </view>
+      <view animation="{{animation3}}">
+        <image src="{{clubs[2]}}" class="img3" style="width:{{img_width_three}}rpx" mode='aspectFill'/>
+      </view> 
+    </view>
+    <view class='pimg pimgleft' bindtap="scrollLeft">
+      <image src='../lib/img/left.png'></image>
+    </view>
+    <view class='pimg pimgright' bindtap="scrollRight">
+      <image src='../lib/img/right.png'></image>
+    </view>
+</view>
+
